@@ -15,7 +15,6 @@
     height: 100%;
 }
 
-
 .game_background video {
     width: 100%;
     height: 100%;
@@ -30,7 +29,6 @@
     justify-content: center;
     width: 100%;
     height: 80%;
-
 }
 
 .slider_button {
@@ -57,20 +55,16 @@
 }
 .banner {
     width: 70%;
-    height: 100% ;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-  .banner img {
-
+.banner img {
     border-radius: 1.5rem;
     border: 3px solid white;
-
 }
-
-
 
 .game_banner {
     transition: transform 0.3s ease-in-out;
@@ -83,15 +77,16 @@
 
 header {
     background: #ff5e01;
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    height: 5rem;
 }
 
 .logo {
-    width:8rem;
+    width: 8rem;
     height: 6rem;
 }
 
@@ -102,27 +97,25 @@ header {
     justify-content: center;
     gap: 1rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ff5e01;
 }
 
-
 .header_nav li {
     transition: all 0.3s ease-in-out;
-    padding: 1rem;;
+    padding: 1rem;
     border-radius: 1rem;
     background: white;
-
 }
 .header_nav li:hover {
     color: white;
     background: #b60000;
 }
 
-
-
 .gallery {
-    /* background: #ff5e01; */
+    background: #ff5e01;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,33 +123,32 @@ header {
     margin: 3rem;
 }
 .gallery_name {
-    /* color: white; */
-    color: #ff5e01;
+    color: white;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.gallery_container{
-     width: 70%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+.gallery_container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
 }
 
 .gallery_video {
-    /* background: white; */
-    background: #ff5e01;
-    color: white;
+    background: white;
     text-align: center;
 
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    
+
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+
+    border: 2px solid white;
 }
 
 .gallery_video:hover {
@@ -192,32 +184,29 @@ header {
 }
 
 iframe {
-   width: 80%;
-   height: 300px;
+    width: 80%;
+    height: 300px;
 }
 
 footer {
     background-color: #ff5e01;
     color: white;
     text-align: center;
-
 }
-@media (min-width: 1024px){
-  .gallery_container{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+@media (min-width: 1024px) {
+    .gallery_container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 
-  iframe {
-    width: 859px;
-    height: 491px;
-  }
+    iframe {
+        width: 859px;
+        height: 491px;
+    }
 
-  .banner img {
-    width: 80%;
-    height: 100% ;
-    border-radius: 1.5rem;
-    border: 3px solid white;
-
-}
-  
+    .banner img {
+        width: 80%;
+        height: 100%;
+        border-radius: 1.5rem;
+        border: 3px solid white;
+    }
 }
