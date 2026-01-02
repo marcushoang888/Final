@@ -68,25 +68,32 @@ const gallery = [
 const banner = document.querySelector(".banner");
 const left = document.querySelector("button:first-child");
 const right = document.querySelector("button:last-child");
+left.classList.add("disabled");
 
 let index = 0;
 
 banner.innerHTML = `<img onclick="changePage('${games[index].local_link}')" class="game_banner" src="${games[index].banner}" alt="${games[index].name}">`;
 
 right.addEventListener("click", () => {
+    left.disabled = false;
+    left.classList.remove("disabled");
     if (index + 1 <= games.length - 1) {
         index++;
     } else {
-        index = 0;
+        right.disabled = true;
+        right.classList.add("disabled");
     }
     banner.innerHTML = `<img onclick="changePage('${games[index].local_link}')" class="game_banner" src="${games[index].banner}" alt="${games[index].name}">`;
 });
 
 left.addEventListener("click", () => {
+    right.disabled = false;
+    right.classList.remove("disabled");
     if (index - 1 >= 0) {
         index--;
     } else {
-        index = games.length - 1;
+        left.disabled = true;
+        left.classList.add("disabled");
     }
     banner.innerHTML = `<img onclick="changePage('${games[index].local_link}')" class="game_banner" src="${games[index].banner}" alt="${games[index].name}">`;
 });

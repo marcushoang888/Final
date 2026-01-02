@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="nav.css">
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left"
@@ -16,12 +17,15 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <title>ESL GAME CHALLENGE</title>
+
+        
+        <link rel="icon" href="./src/Logo.png">
+        <title>ESL Game Challenge</title>
     </head>
     <body>
 
         <header>
-            <a href=""><img src="src/Logo.png" alt="" class="logo"></a>
+            <a href="./index.html"><img src="src/Logo.png" alt="" class="logo"></a>
             <ul class="header_nav">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -30,6 +34,10 @@
 
 
         <div class="game_introduction">
+            <div class="game_title">
+            <h1 class="">CHALLENGE</h1>
+            <img src="./src/challenge.png" alt="">
+            </div>
             
 
             <div class="game_background">
@@ -49,7 +57,10 @@
 
 
         <div id="gallery" class="gallery">
-            <h1 class="gallery_name">GALLERY</h1>
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem; gap: 1rem">
+                <h1 class="gallery_name">GALLERY</h1>
+                <img style="width: 5rem; height: 5rem;" src="./src/gallery.png" alt="">
+            </div>
             <div class="gallery_container"></div>
             
         </div>

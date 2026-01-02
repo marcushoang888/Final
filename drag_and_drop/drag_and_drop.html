@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Drag and Drop
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../nav.css">
+
+        <link rel="stylesheet" href="./drag_and_drop.css" />
+        <link rel="icon" href="./src/Logo.png" />
+        <link rel="stylesheet" href="../reset.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>ESL Game Challenge</title>
+        <style></style>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../src/Logo.png" alt="" class="logo" /></a>
+            <ul class="header_nav">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </header>
+        <div class="timerContainer"></div>
+        <div class="ready_container">
+            <button class="ready">Ready</button>
+        </div>
+        <div class="container"></div>
+
+        <script src="./drag_and_drop.js"></script>
+    </body>
 </html>
