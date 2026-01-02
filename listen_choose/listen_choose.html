@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listening and Choose correct picture  </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Listen and Choose
+  <div class="game-wrapper">
+  
+<h1> Listen and Choose the Correct Picture</h1>
+<h2>Topic: Transportation</h2>
+
+<button id="playsound"> 🔊Listen </button>
+<div class="image-container">
+  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
+  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
+  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
+</div>
+
+<div id="final-screen" style="display:none; text-align:center;">
+  <h2>🎉 Congrats! You overcame this challenge!</h2>
+  <div id="stars" style="font-size:40px; margin:20px 0;"></div>
+  <p id="final-score" style="font-size:20px;"></p>
+  <button onclick="restartQuiz()">🔁 Play Again</button>
+</div>
+
+
+
+
+
+<p id="result"></p>
+
+<script src="script.js"></script>
+</div>
+  
 </body>
 </html>
