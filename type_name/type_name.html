@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        Type Name
-    </body>
+<head>
+  <title>FRUIT VOCAB</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stiil.css">
+</head>
+
+<body>
+
+<div class="game-wrapper">
+
+  <h1 id="score">0</h1>
+
+  <div class="quiz-container">
+    <div class="quiz-card">
+      <h2>What is this FRUIT?</h2>
+
+      <img>
+
+      <div class="input-wrapper">
+        <input type="text" class="answer">
+        <button class="submit">→</button>
+      </div>
+
+      <p class="correct">Correct!</p>
+      <p class="wrong">Wrong!</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="victory">
+  <div class="victory-message">
+     Congratulations, you've overcome this challenge !!!
+  </div>
+</div>
+
+
+<script src="fruitlogic.js"></script>
+</body>
+
 </html>
