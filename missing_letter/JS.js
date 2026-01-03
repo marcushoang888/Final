@@ -89,7 +89,8 @@ function checkAnswer() {
 		document.getElementById("answer").style.display = "none";
 		document.getElementById("nextBtn").style.display = "none";
 		document.getElementById("result").style.display = "none";
-		document.getElementById("checkBtn").style.display="none";
+		document.getElementById("checkBtn").style.display= "none";
+		document.getElementById("congrats").style.display= "flex";
 	}
 	
 		
