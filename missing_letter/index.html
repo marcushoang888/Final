@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Letter Game</title>
+    <link rel="stylesheet" href="CSS.css">
+	 <script src="JS.js"></script>
+</head>
+<body>
+
+    <h1>🐾 Guess The Missing Letter! 🐾</h1>
+	<h1> Animal Edition</h1>
+	
+	<button class="back-arrow" onclick="goBack()">⬅ </button>
+
+    <div class="game-box">
+        <img id="animalImage" src="cat.jpeg" alt="Animal Image">
+
+        <p id="animalWord">C _ T</p>
+
+        <input type="text" id="answer" maxlength="1" placeholder="?" />
+        <br><br>
+
+        <button id="checkBtn" onclick="checkAnswer()">Check</button>
+		<button id="nextBtn" onClick="nextQuestion()">Next</button>
+
+        <p id="result"></p>
+		
+		<div class="congrats" id="congrats">
+			 <p class="congrats-title">🎉 Congratulations! 🎉 </p>
+			 <p class="congrats-text">You finished all the animals! </p>
+			  
+			 
+		</div>
+    </div>
+	
+
+	
+</body>
+</html>
