@@ -80,3 +80,7 @@ cards.forEach(card => {
 
 
 
+function goBack() {
+    window.location.href = "../index.html"; //change to file name of the challenge page or main page
+	
+}

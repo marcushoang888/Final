@@ -1,8 +1,7 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: orange;
-	
+
     text-align: center;
 }
 
@@ -10,16 +9,24 @@ h1 {
     color: #333;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
 .game-box {
-   position: relative;
-   background: white;
-   width: 1000px;
-   padding: 20px;
-   border-radius: 15px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   
-   margin: 40px auto;
-   
+    position: relative;
+    background: white;
+    width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
@@ -50,69 +57,64 @@ button {
 }
 
 #nextBtn {
-	display: none;
+    display: none;
 }
 
 #answer {
-	
-	width: 60px;
-	height: 60px;
-	font-size: 32px;
-	text-align: center;
-	
-	border: 3px solid #4CAF50;
-	border-radius: 12px;
-	outline: none;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    text-align: center;
+
+    border: 3px solid #4caf50;
+    border-radius: 12px;
+    outline: none;
 }
 #answer:focus {
-	
-	border-color: #ff9800;
-	box-shadow: 0 0 8px rgba(255, 152, 0, 0.6);
+    border-color: #ff9800;
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.6);
 }
 
 .back-arrow {
-	
-	position: fixed;
-	top: 15px;
-	left: 15px;
-	
-	font-size: 28px;
-	background: none;
-	border: none;
-	cursor: pointer;
-	
-	color: #333;
-	
-	width: 55px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: #f0f0f0;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    color: #333;
+
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .back-arrow:hover {
-	
-	color: red;
+    color: red;
 }
 
 .congrats {
-	position: absolute;
-	top: 0;
-	left: 0;
-	
-	width: 100%;
-	height: 100%;
-	
-	background-color: rgba(255, 255, 255, 0.95);
-	border-radius: 15px;
-	
-	display: none;			/*hidden at the start*/
-	align-items: center;
-	justify-content: center;
-	
-	font-size: 36px;
-	font-weight: bold;
-	color: #4CAF50;
-	text-align: center;
-	
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+
+    display: none; /*hidden at the start*/
+    align-items: center;
+    justify-content: center;
+
+    font-size: 36px;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
 }

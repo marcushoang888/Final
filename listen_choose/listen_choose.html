@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listening and Choose correct picture  </title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="game-wrapper">
-  
-<h1> Listen and Choose the Correct Picture</h1>
-<h2>Topic: Transportation</h2>
-
-<button id="playsound"> 🔊Listen </button>
-<div class="image-container">
-  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
-  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
-  <img  onclick="checkAnswer(this.src.split('/').pop().split('.')[0])">
-</div>
-
-<div id="final-screen" style="display:none; text-align:center;">
-  <h2>🎉 Congrats! You overcame this challenge!</h2>
-  <div id="stars" style="font-size:40px; margin:20px 0;"></div>
-  <p id="final-score" style="font-size:20px;"></p>
-  <button onclick="restartQuiz()">🔁 Play Again</button>
-</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Listening and Choose</title>
+        <link rel="icon" href="../src/Logo.png" />
+    <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="../nav.css">
+        
 
 
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"
+                ><img src="../src/Logo.png" alt="" class="logo"
+            /></a>
+            <ul class="header_nav">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </header>
 
+        
+        <div class="game-wrapper">
+            <h1>Listen and Choose the Correct Picture</h1>
+            <h2>Topic: Transportation</h2>
 
+            <button id="playsound">🔊Listen</button>
+            <div class="image-container">
+                <img
+                    onclick="checkAnswer(this.src.split('/').pop().split('.')[0])"
+                />
+                <img
+                    onclick="checkAnswer(this.src.split('/').pop().split('.')[0])"
+                />
+                <img
+                    onclick="checkAnswer(this.src.split('/').pop().split('.')[0])"
+                />
+            </div>
 
-<p id="result"></p>
+            <div id="final-screen" style="display: none; text-align: center">
+                <h2>🎉 Congrats! You overcame this challenge!</h2>
+                <div id="stars" style="font-size: 40px; margin: 20px 0"></div>
+                <p id="final-score" style="font-size: 20px"></p>
+                <button onclick="restartQuiz()">🔁 Play Again</button>
+            </div>
 
-<script src="script.js"></script>
-</div>
-  
-</body>
+            <p id="result"></p>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
 </html>

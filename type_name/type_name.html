@@ -1,43 +1,54 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>FRUIT VOCAB</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="stiil.css">
-</head>
+    <head>
+        <title>FRUIT VOCAB</title>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../src/Logo.png" />
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="stylesheet" href="../nav.css" />
+        <link rel="stylesheet" href="stiil.css" />
+    </head>
 
-<body>
+    <body>
+        <header>
+            <a href="../index.html"
+                ><img src="../src/Logo.png" alt="" class="logo"
+            /></a>
+            <ul class="header_nav">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </header>
 
-<div class="game-wrapper">
+        <div class="container">
+            <div class="game-wrapper">
+                <h1 id="score">0</h1>
 
-  <h1 id="score">0</h1>
+                <div class="quiz-container">
+                    <div class="quiz-card">
+                        <h2>What is this FRUIT?</h2>
 
-  <div class="quiz-container">
-    <div class="quiz-card">
-      <h2>What is this FRUIT?</h2>
+                        <img />
 
-      <img>
+                        <div class="input-wrapper">
+                            <input type="text" class="answer" />
+                            <button class="submit">→</button>
+                        </div>
 
-      <div class="input-wrapper">
-        <input type="text" class="answer">
-        <button class="submit">→</button>
-      </div>
+                        <p class="correct">Correct!</p>
+                        <p class="wrong">Wrong!</p>
+                    </div>
+                </div>
+            </div>
 
-      <p class="correct">Correct!</p>
-      <p class="wrong">Wrong!</p>
-    </div>
-  </div>
+            <div id="victory">
+                <div class="victory-message">
+                    Congratulations, you've overcome this challenge !!!
+                    <button class="back-arrow" onclick="goBack()">Go Back </button>
 
-</div>
+                </div>
+            </div>
+        </div>
 
-<div id="victory">
-  <div class="victory-message">
-     Congratulations, you've overcome this challenge !!!
-  </div>
-</div>
-
-
-<script src="fruitlogic.js"></script>
-</body>
-
+        <script src="fruitlogic.js"></script>
+    </body>
 </html>
