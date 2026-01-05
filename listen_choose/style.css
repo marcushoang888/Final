@@ -1,29 +1,23 @@
 body {
-  margin: 0;
-  font-family: "Poppins", Arial, sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #eaf6ff,
-    #fdfefe
-  );
-  min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(to bottom, #eaf6ff, #fdfefe);
+    min-height: 100vh;
 }
 
 .game-wrapper {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #ff5e01;
-  border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ff5e01;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-
-
 
 h1 {
     color: #ffffff;
@@ -45,20 +39,19 @@ button {
 }
 
 .image-container img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  border-radius: 16px;
-  background: #f4faff;
-  padding: 10px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #f4faff;
+    padding: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .image-container img:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
-
 
 #result {
     font-size: 24px;
@@ -67,48 +60,89 @@ button {
 }
 
 .image-container img {
-  cursor: pointer;
-  transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .image-container img.correct {
-  border: 4px solid green;
-  transform: scale(1.05);
+    border: 4px solid green;
+    transform: scale(1.05);
 }
 
 .image-container img.wrong {
-  border: 4px solid red;
-  opacity: 0.6;
+    border: 4px solid red;
+    opacity: 0.6;
 }
 
 #playsound {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  border: none;
-  color: white;
-  font-size: 18px;
-  padding: 12px 28px;
-  border-radius: 999px;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
-  transition: transform 0.2s ease;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+    transition: transform 0.2s ease;
 }
 
 #playsound:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #final-screen {
-  animation: popIn 0.6s ease;
+    animation: popIn 0.6s ease;
 }
 
 @keyframes popIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
+.ready_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.ready {
+    background-color: rgb(33, 218, 33);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ready:hover {
+    background-color: rgb(20, 148, 20);
+}
+
+.ready:active {
+    transition: all 0.1s ease-in-out;
+    background-color: rgb(33, 218, 33);
+    transform: scale(0.9);
+}
+
+.countdown {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}

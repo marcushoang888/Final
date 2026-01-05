@@ -73,8 +73,6 @@ function nextQuestion() {
         return;
         //currentQuestion = 0; //restart game
     }
-
-    loadQuestion();
 }
 
 /* Show Contgratulations after the last question */
@@ -95,9 +93,26 @@ function showCongrats() {
 }
 
 // Load first question when page opens
-loadQuestion();
 
 function goBack() {
     window.location.href = "../index.html"; //change to file name of the challenge page or main page
-	
 }
+
+const ready = document.querySelector(".ready");
+const readyContainer = document.querySelector(".ready_container");
+
+var Firsttimer = 4;
+
+ready.addEventListener("click", () => {
+    ready.remove();
+
+    const countdown = setInterval(() => {
+        Firsttimer--;
+        readyContainer.innerHTML = `<div class="countdown">${Firsttimer}</div>`;
+        if (Firsttimer == 0) {
+            clearInterval(countdown);
+            readyContainer.remove();
+            loadQuestion();
+        }
+    }, 1000);
+});

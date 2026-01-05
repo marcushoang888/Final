@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Animal Letter Game</title>
-    <link rel="stylesheet" href="CSS.css">
-    <link rel="stylesheet" href="../nav.css">
-    <link rel="stylesheet" href="../reset.css">
-            <link rel="icon" href="../src/Logo.png" />
-	 <script src="JS.js"></script>
-</head>
-<body>
-
-    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Animal Letter Game</title>
+        <link rel="stylesheet" href="CSS.css" />
+        <link rel="stylesheet" href="../nav.css" />
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="icon" href="../src/Logo.png" />
+    </head>
+    <body>
         <header>
-            <a href="../index.html"><img src="../src/Logo.png" alt="" class="logo"></a>
+            <a href="../index.html"
+                ><img src="../src/Logo.png" alt="" class="logo"
+            /></a>
             <ul class="header_nav">
                 <li><a href="../index.html">Home</a></li>
             </ul>
         </header>
 
+        <div class="container">
+            <div class="game-box">
+                <h1 style="margin: 1.5rem 0;">Guess The Missing Letter! </h1>
 
-    <div class="container">
-  
-    <div class="game-box">
-          <h1>🐾 Guess The Missing Letter! 🐾</h1>
-	    <h1> Animal Edition</h1>
-	
-        <img id="animalImage" src="cat.jpeg" alt="Animal Image">
+                <img id="animalImage" src="cat.jpeg" alt="Animal Image" />
 
-        <p id="animalWord">C _ T</p>
+                <p id="animalWord">C _ T</p>
 
-        <input type="text" id="answer" maxlength="1" placeholder="?" />
-        <br><br>
+                <input type="text" id="answer" maxlength="1" placeholder="?" />
+                <br /><br />
 
-        <button id="checkBtn" onclick="checkAnswer()">Check</button>
-		<button id="nextBtn" onClick="nextQuestion()">Next</button>
+                <button id="checkBtn" onclick="checkAnswer()">Check</button>
+                <button id="nextBtn" onClick="nextQuestion()">Next</button>
 
-        <p id="result"></p>
-		
-		<div class="congrats" id="congrats">
-			 <p class="congrats-title">🎉 Congratulations! 🎉 </p>
-			 <p class="congrats-text">You finished all the animals! </p>
-	        <button class="back-arrow" onclick="goBack()">⬅ </button>
-			  
-			 
-		</div>
-    </div>
-	
-        
-    </div>
+                <p id="result"></p>
 
+                <div class="congrats" id="congrats">
+                    <p class="congrats-title">🎉 Congratulations! 🎉</p>
+                    <p class="congrats-text">You finished all the animals!</p>
+                    <button class="back-arrow" onclick="goBack()">⬅</button>
+                </div>
+            </div>
+        </div>
 
-	
-</body>
+        <div class="ready_container">
+            <button class="ready">Ready</button>
+        </div>
+
+        <script src="JS.js"></script>
+
+    </body>
 </html>
