@@ -40,7 +40,7 @@ cards.forEach((card) => {
     //changing fruits after you have gotten an answer correct
     function setFruit(newFruit) {
         fruit = newFruit;
-        img.src = fruit + ".png";
+        img.src = "./src/" + fruit + ".png";
         img.alt = fruit;
         input.value = "";
         correctText.style.display = "none";

@@ -2,37 +2,37 @@ const questions = [
     {
         word: "C_T",
         answer: "A",
-        image: "Cat.jpeg",
+        image: "./src/Cat.jpeg",
     },
     {
         word: "D_G",
         answer: "O",
-        image: "DOG.jpg",
+        image: "./src/DOG.jpg",
     },
     {
         word: "CHI_KEN",
         answer: "C",
-        image: "CHICKEN.jpg",
+        image: "./src/CHICKEN.jpg",
     },
     {
         word: "TI_ER",
         answer: "G",
-        image: "TIGER.jpg",
+        image: "./src/TIGER.jpg",
     },
     {
         word: "BI_D",
         answer: "R",
-        image: "BIRD.jpg",
+        image: "./src/BIRD.jpg",
     },
     {
         word: "FO_",
         answer: "X",
-        image: "FOX.jpeg",
+        image: "./src/FOX.jpeg",
     },
     {
         word: "KIT_EN",
         answer: "T",
-        image: "CAT.jpg",
+        image: "./src/CAT.jpg",
     },
 ];
 
