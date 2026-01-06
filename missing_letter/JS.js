@@ -66,6 +66,8 @@ function checkAnswer() {
 }
 
 function nextQuestion() {
+    console.log(1);
+
     currentQuestion++;
 
     if (currentQuestion >= questions.length) {
@@ -73,6 +75,8 @@ function nextQuestion() {
         return;
         //currentQuestion = 0; //restart game
     }
+
+    loadQuestion();
 }
 
 /* Show Contgratulations after the last question */
